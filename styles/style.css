@@ -73,7 +73,7 @@
   box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
 }
 
-.logo__block{
+.logo__block {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -86,7 +86,7 @@
   font-family: var(--font-highlight);
 }
 
-.logo-subtitle{
+.logo-subtitle {
   font-size: 23px;
   font-family: var(--font-highlight);
   font-weight: var(--font-weight-normal);
@@ -112,7 +112,7 @@
   font-variation-settings: 'wght' var(--font-weight-bold);
 }
 
-.post__image-block{
+.post__image-block {
   display: grid;
   overflow: hidden;
 }
