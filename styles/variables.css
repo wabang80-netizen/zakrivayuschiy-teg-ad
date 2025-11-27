@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+    --color-acc: #000;
+    --color-anim: #FF0000;
+    --color-background: #fff;
+    --color-hover-button-text: #fff;
+    --border-style: 2px solid var(--color-acc);
+
+    --font-main: 'Inter-Variable', sans-serif;
+    --font-highlight: 'PressStart2P', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+
+    --image-background: repeating-linear-gradient(90deg, #D3D3D3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #D3D3D3 0px 2px, transparent 2px 4px),
+    linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+}

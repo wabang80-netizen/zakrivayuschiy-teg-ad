@@ -9,3 +9,77 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+/*анимация второго нажатия*/
+.like-icon .spaces {
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon .in {
+  transition: fill 0.3s linear;
+}
+
+/*навестись на сердце*/
+.like-icon:hover .in {
+  fill: var(--color-acc);
+  transition: fill 0s 0.1s linear;
+}
+
+.like-icon:hover .spaces {
+  fill: var(--color-acc);
+  transition: fill linear;
+}
+
+/*сердце зажато*/
+.like-icon:active .in {
+  fill: var(--color-anim);
+  transition: fill 0s 0.1s linear;
+}
+
+.like-icon:active .spaces {
+  fill: var(--color-anim);
+  transition: fill linear;
+}
+
+/*сердце нажато*/
+
+.like-icon.is-liked .spaces {
+  fill: var(--color-anim);
+}
+
+.like-icon.is-liked .in {
+  fill: var(--color-anim);
+}
+
+.like-icon .cont {
+  transition: fill linear;
+}
+
+.like-icon.is-liked .cont {
+  fill: var(--color-anim);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .particles {
+    animation: like-particles 0.3s 0.1s ease-in alternate;
+}
+
+@keyframes like-particles {
+    from {
+        fill: transparent;
+    }
+    
+    to {
+        fill: var(--color-anim);
+    }
+}
+
+@keyframes like-contur {
+    from {
+        stroke: var(--color-anim);
+        stroke-width: 1px;
+    }
+
+    to {
+        stroke: none;
+    }
+}
